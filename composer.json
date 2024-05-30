@@ -1,0 +1,9 @@
+{
+    "name": "acer/base_php2",
+    "autoload": {
+        "psr-4": {
+            "Acer\\BasePhp2\\": "src/"
+        }
+    },
+    "require": {}
+}
