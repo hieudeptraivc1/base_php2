@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Xem chi tiết: {{ $products['name'] }}
+    Xem chi tiết: {{ $categories['name'] }}
 @endsection
 
 @section('content')
@@ -14,7 +14,7 @@
         </thead>
         <tbody>
 
-            @foreach ($products as $key => $value)
+            @foreach ($categories as $key => $value)
                 <tr>
                     <td>{{ $key }}</td>
                     <td>{!! $value !!}</td>

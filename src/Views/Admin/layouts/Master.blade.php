@@ -19,6 +19,7 @@
     <div class="container">
         <nav class="mt-5">
             <a href="{{ url('admin') }}">Dashboard</a>
+            <a href="{{ url('admin/categories') }}">Quản lý Danh mục</a>
             <a href="{{ url('admin/products') }}">Quản lý Sản phẩm</a>
         </nav>
 
