@@ -158,7 +158,7 @@ class ProductController extends Controller
 
             $this->product->update($id, $data);
 
-            if ($product['img_thumbnail'] && file_exists( PATH_ROOT . $product['img_thumbnail'] ) ) {
+            if ($product['img_thumbnail'] && file_exists(PATH_ROOT . $product['img_thumbnail'])) {
                 unlink(PATH_ROOT . $product['img_thumbnail']);
             }
 
@@ -177,7 +177,7 @@ class ProductController extends Controller
 
             $this->product->delete($id);
 
-            if ($product['img_thumbnail'] && file_exists( PATH_ROOT . $product['img_thumbnail'] ) ) {
+            if ($product['img_thumbnail'] && file_exists(PATH_ROOT . $product['img_thumbnail'])) {
                 unlink(PATH_ROOT . $product['img_thumbnail']);
             }
 

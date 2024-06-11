@@ -34,21 +34,20 @@
                     <label for="category_id" class="form-label">Category:</label>
                     <select name="category_id" id="category_id" class="form-select">
                         @foreach ($categoryPluck as $id => $name)
-                            <option 
-                                @if ($products['category_id'] == $id)
-                                    selected
-                                @endif
-                                value="{{ $id }}">{{ $name }}</option>
+                            <option @if ($products['category_id'] == $id) selected @endif value="{{ $id }}">
+                                {{ $name }}</option>
                         @endforeach
                     </select>
                 </div>
                 <div class="mb-3 mt-3">
                     <label for="name" class="form-label">Name:</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" value="{{ $products['name'] }}" name="name">
+                    <input type="text" class="form-control" id="name" placeholder="Enter name"
+                        value="{{ $products['name'] }}" name="name">
                 </div>
                 <div class="mb-3 mt-3">
                     <label for="img_thumbnail" class="form-label">Img Thumbnail:</label>
-                    <input type="file" class="form-control" id="img_thumbnail" placeholder="Enter img_thumbnail" name="img_thumbnail">
+                    <input type="file" class="form-control" id="img_thumbnail" placeholder="Enter img_thumbnail"
+                        name="img_thumbnail">
                     <img src="{{ asset($products['img_thumbnail']) }}" width="100px" alt="">
                 </div>
             </div>
@@ -69,3 +68,9 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 @endsection
+
+
+
+
+
+
